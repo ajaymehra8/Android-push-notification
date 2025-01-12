@@ -1,7 +1,7 @@
 const express = require("express");
 const admin = require("./firebaseAdmin");
 const schedule = require("node-schedule");
-
+require('dotenv').config();
 const app = express();
 app.use(express.json());
 
