@@ -41,6 +41,8 @@ console.log(time);
 
   res.status(200).send(`Notification scheduled at ${scheduledTime}`);
 });
-
+app.get('/',(req,res)=>{
+    res.json("working");
+})
 const PORT = 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
